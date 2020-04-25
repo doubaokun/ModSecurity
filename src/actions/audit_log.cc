@@ -31,7 +31,7 @@ bool AuditLog::evaluate(Rule *rule, Transaction *transaction,
     std::shared_ptr<RuleMessage> rm) {
     rm->m_noAuditLog = false;
     ms_dbg_a(transaction, 9, "Saving transaction to logs");
-    rm->m_saveMessage = true;
+    //rm->m_saveMessage = true;
 
     return true;
 }
